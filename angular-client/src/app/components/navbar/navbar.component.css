@@ -1,0 +1,145 @@
+ 
+
+body {
+  background-color: #100f1a;
+  font-family: Arial, Helvetica, sans-serif;
+  /* margin-top: 30px;
+  margin-right: 80px;
+  margin-left: 80px; */
+  margin: 30px;
+}
+
+.navbar a {
+
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  /* margin: 10px; */
+  text-decoration: none;
+}
+
+.drpdown {
+  /* position: relative;
+  display: inline-block; */
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  /* min-width: 160px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px;
+  margin: 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.drpdown:hover .dropdown-content {
+  display: block;
+  
+}
+
+.dropdown-content a:hover{
+  color: white;  
+}
+img {
+  float: left;
+}
+input{
+  float: left;
+}
+h3 {
+  color: red;
+}
+
+li{
+  list-style-type: none;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 20px;
+
+}
+
+#search-bar{
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#search-bar input,input:focus{
+  width:400px;
+  height:40px;
+  border-radius: 20px 0px 0px 20px;
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  
+}
+
+#search-bar button, button:focus{
+  height: 42px;
+  width: 50px;
+  /* border-radius: 20px; */
+  outline: none;
+  border: 0;
+  box-shadow: none;
+}
+
+#search-bar button:active{
+  background: rgb(128, 0, 0);
+}
+
+.left-align{
+  float: left;
+  margin-top: 10px;
+}
+
+.right-align{
+  margin-top:10px;
+  float: right;
+  margin-right: 10px;
+}
+
+
+
+
+
+/* .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+} */
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(128, 0, 0);
+  border-radius: 20px;
+}
+
+
+.navbar-right {
+    float: right;
+  }
+
+#myCarousel {
+  margin: 0% 20% 0% 20%;
+}
+

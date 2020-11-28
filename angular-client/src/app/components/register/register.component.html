@@ -1,0 +1,48 @@
+<form [formGroup]="myForm">
+    <div class="container">
+        <div class="row">
+            <h1>Register</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+
+            <div>
+                <label for="username"><b>Username</b></label>
+                <input type="text" formControlName="username" placeholder="Enter Username" name="username" id="username"
+                    required>
+                <span *ngIf="isValid('username')">Username is required</span>
+            </div>
+            <br>
+
+            <div>
+                <label for="email"><b>Email</b></label>
+                <input type="text" formControlName="email" placeholder="Enter Email" name="email" id="email" required>
+                <span *ngIf="isValid('email')">Invalid Email</span>
+            </div>
+            <br>
+
+            <div>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" formControlName="password" placeholder="Enter Password" name="psw" id="psw"
+                    required>
+                <span *ngIf="isValid('password')">Password is required</span>
+            </div>
+            <br>
+            <div>
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" formControlName="cnfpass" placeholder="Repeat Password" name="psw-repeat"
+                    id="psw-repeat" required>
+                <span *ngIf="isValid('cnfpass')">Password doesnt match</span>
+            </div>
+            <br>
+            <hr>
+
+            <button type="submit" class="registerbtn" (click)="register()">Register</button>
+            <div class="container-signin">
+                {{successMessage}}
+                <p>Already have an account? <a [routerLink]="['/login']">Sign in</a>.</p>
+            </div>
+        </div>
+    </div>
+
+
+</form>

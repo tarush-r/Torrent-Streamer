@@ -1,0 +1,57 @@
+.container {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+    margin-right: 80px;
+    margin-left: 80px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    overflow: auto;
+  
+      /* background-image: linear-gradient(to right, black , #05081c); */
+  }
+
+.row{
+    border: 3px solid #ccc;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    margin: 20px;
+    text-align: center;
+    /* padding: 20px; */
+    /* height: auto; */
+    overflow: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+.row > div input{
+    margin: 20px;
+}
+
+.row input, input:active{
+    border-radius: 20px;
+    height: 30px;
+    width: 300px;
+    outline: none;
+    border: 1px solid black;
+}
+
+button{
+    height: 42px;
+    width: 100px;
+    /* padding: 20px; */
+    border-radius: 20px;
+    outline: none;
+    border: 3px solid black;
+    /* box-shadow: none; */
+}
+
+button:hover{
+    background: rgb(128, 0, 0);
+    color: white;
+}
+/* .spacer{
+    padding: 20px;
+} */

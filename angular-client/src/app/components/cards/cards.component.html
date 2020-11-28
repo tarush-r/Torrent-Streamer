@@ -1,0 +1,28 @@
+<!-- <h1>{{message}}</h1> -->
+<!-- <div *ngFor='let movie of movies$'>
+  <h2>{{movie.Title}}</h2>
+  
+</div> -->
+<!-- <h2 *ngIf="message!=null; then searchMovie(message)">{{message}}</h2> -->
+
+<!-- <head> -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+<!-- </head> -->
+<!-- <title>Example</title> -->
+<div class="container">
+  <div class="grid">
+    <div *ngFor='let movie of movies$'>
+      <img src={{movie.Poster}} alt="assets/images/logo.png">
+      <div class="text">
+        <h3>{{ movie.Title}}</h3>
+
+        <button routerLink="movie-detail" (click)="sendIdToMovieDetail(movie.imdbID, movie.Title)">Watch Movie</button>
+      </div>
+    </div>
+  </div>
+</div>

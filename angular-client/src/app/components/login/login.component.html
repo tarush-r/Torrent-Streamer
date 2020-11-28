@@ -1,0 +1,36 @@
+<form [formGroup]="loginForm">
+    <div class="container">
+        <div class="row">
+            <h1>Login</h1>
+            <hr>
+
+            <div>
+                <label for="username"><b>Username</b></label>
+                <input type="text" formControlName="username" placeholder="Enter Username" name="username" id="username"
+                    required>
+                <div *ngIf="isValid('username')">Username is required</div>
+            </div>
+
+
+
+            <div>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" formControlName="password" placeholder="Enter Password" name="psw" id="psw"
+                    required>
+                <div *ngIf="isValid('password')">Password is required</div>
+            </div>
+
+
+
+            <hr>
+
+            <button type="submit" class="registerbtn" (click)="login()">Login</button>
+            <div class="container signin">
+                <p>Don't have an account? <a [routerLink]="['/register']">Register</a>.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</form>
